@@ -147,7 +147,7 @@ def stream(file_name, cls_parser=RssParser(), cls_data=Artical):
             raise RequestError("Chanal %s returns empty response" 
                                %(rss_url))
 
-        content = BeautifulSoup(channel_data)
+        content = BeautifulSoup(channel_data, "xml")
 
         try:
             items = parser(cls_parser, cls_data, content)

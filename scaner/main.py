@@ -19,16 +19,13 @@ if __name__ == '__main__':
 
     word_count = {}
 
-    for artical in items['https://lenta.ru/rss']:
-        for word in artical.description.split(' '):
+    for artical in items['http://www.kommersant.ru/RSS/news.xml']:
+        words = re.findall('[А-ЯЁа-яё0-9A-Za-z\-]+',
+                           artical.description)
+
+        for word in words:
 
             normal_word = word.lower()
-            normal_word = re.findall(
-                            #'[^#\d+\s][А-ЯЁа-яё.\d\-\_\:]+',
-                            '\S+',
-                             normal_word
-            )
-            normal_word = str('').join(normal_word)
 
             if not word_count.get(normal_word):
                 word_count[normal_word] = 1
