@@ -7,7 +7,7 @@ def count_word(sources_of_data):
 
     for artical in sources_of_data['http://www.kommersant.ru/RSS/news.xml']:
         word_count = {}
-        words = re.findall('[А-ЯЁа-яё0-9A-Za-z\-]+',
+        words = re.findall("[А-ЯЁа-яё0-9A-Za-z\-']+",
                            artical.description)
 
         for word in words:

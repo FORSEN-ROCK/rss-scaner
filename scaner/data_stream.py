@@ -140,6 +140,11 @@ def stream(file_name, cls_parser=RssParser(), cls_data=Artical):
     agrigate_data = {}
 
     for rss_url in source_links:
+
+        ## Comment in file of links
+        if rss_url[0] == '#':
+            continue
+
         response = requests.get(rss_url)
         channel_data = response.content
 

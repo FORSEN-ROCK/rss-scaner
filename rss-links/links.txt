@@ -5,9 +5,14 @@ https://news.mail.ru/rss/
 http://kazachya.net/rss.xml
 https://www.svoboda.org/rss/
 http://news.rambler.ru/rss/politics/
-http://nn.by/rss.php
 http://stackoverflow.com/feeds
-http://35photo.ru/rss/community_96.xml
+#http://35photo.ru/rss/community_96.xml
 http://www.kommersant.ru/RSS/news.xml
 http://tass.ru/rss/v2.xml?sections=Mjg%3D
 http://top.artlebedev.ru/rss/
+https://forum.anastasia.ru/rss.php?atom
+https://www.newsvl.ru/rss/
+#http://rest.ebay.com/epn/v1/find/item.rss?keyword=antiqu&categoryId1=37978&sortOrder=BestMatch&programid=1&campaignid=5338238644
+https://tproger.ru/feed/
+http://1000inf.ru/news/rss/
+http://loveplanet.ru/affiliate_id-38802/a-rss/aa-new/age1-/age2-/country-248/
